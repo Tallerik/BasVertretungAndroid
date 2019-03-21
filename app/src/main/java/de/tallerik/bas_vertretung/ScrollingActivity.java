@@ -69,7 +69,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
         String out = (String) new AsyncDownload().execute("http://tallerikyt.ddns.net/VT/getVT.php").get();
         System.out.println(out);
-        TableLayout table = (TableLayout) findViewById(R.id.contentTable);
+      // TableLayout table = (TableLayout) findViewById(R.id.contentTable);
 //
 //
 //        for (int i = 0; i < 2; i++) {
@@ -88,21 +88,10 @@ public class ScrollingActivity extends AppCompatActivity {
 //            table.addView(row);
 //        }
 
-        for (int i = 0; i < table.getChildCount(); i++) {
-            table.removeView(table.getChildAt(i));
-        }
-
-
         JSONObject json = new JSONObject(out);
 
         JSONArray heute = json.getJSONArray("heute");
 
-        TextView heutetext = new TextView(this);
-        heutetext.setText("Vertretung Heute");
-        LinearLayout heutelayout = new LinearLayout(this);
-        heutelayout.setOrientation(LinearLayout.HORIZONTAL);
-        heutelayout.addView(heutetext);
-        table.addView(heutelayout);
 
         for (int i = 0; i < heute.length(); i++) {
             JSONArray array = heute.getJSONArray(i);
@@ -114,24 +103,14 @@ public class ScrollingActivity extends AppCompatActivity {
                 text.setPadding(10, 0, 25, 0);
                 layout.addView(text);
             }
-            table.addView(layout);
+            ((LinearLayout)findViewById(R.id.heute)).addView(layout);
         }
-
-        LinearLayout leer = new LinearLayout(this);
-        TextView leertext = new TextView(this);
-        leertext.setText(" ");
-        leer.addView(leertext);
-        table.addView(leer);
 
 
         JSONArray morgen = json.getJSONArray("morgen");
 
         TextView morgentext = new TextView(this);
-        morgentext.setText("Vertretung Morgen");
-        LinearLayout morgenLayout = new LinearLayout(this);
-        morgenLayout.setOrientation(LinearLayout.HORIZONTAL);
-        morgenLayout.addView(morgentext);
-        table.addView(morgenLayout);
+
         for (int i = 0; i < morgen.length(); i++) {
             JSONArray array = morgen.getJSONArray(i);
             LinearLayout layout = new LinearLayout(this);
@@ -143,9 +122,8 @@ public class ScrollingActivity extends AppCompatActivity {
                 text.setPadding(10, 0, 25, 0);
                 layout.addView(text);
             }
-            table.addView(layout);
+            ((LinearLayout)findViewById(R.id.morgen)).addView(layout);
         }
-
 
 
     }

@@ -29,11 +29,23 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="textAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="fontFamily" value="Adobe Arabic" />
+                                                <entry key="text" value="BAS" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                     </map>
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="assetType" value="TEXT" />
                                       <entry key="imageAsset" value="C:\Users\user\Desktop\bas-Logo transp-3.gif" />
                                       <entry key="outputName" value="ic_bas" />
                                       <entry key="theme" value="HOLO_DARK" />
@@ -69,12 +81,36 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="foregroundText">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="94" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="foregroundTextAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="fontFamily" value="Adobe Arabic" />
+                                                <entry key="text" value="BAS" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                     </map>
                                   </option>
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="f8f7ff" />
+                                      <entry key="foregroundAssetType" value="TEXT" />
                                       <entry key="foregroundImage" value="C:\Users\user\Desktop\bas-Logo transp-3.gif" />
                                     </map>
                                   </option>
