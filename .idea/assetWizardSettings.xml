@@ -29,6 +29,17 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="text">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="trimmed" value="true" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="textAsset">
                                         <value>
                                           <PersistentState>
@@ -47,8 +58,7 @@
                                     <map>
                                       <entry key="assetType" value="TEXT" />
                                       <entry key="imageAsset" value="C:\Users\user\Desktop\bas-Logo transp-3.gif" />
-                                      <entry key="outputName" value="ic_bas" />
-                                      <entry key="theme" value="HOLO_DARK" />
+                                      <entry key="outputName" value="ic_bas_big" />
                                     </map>
                                   </option>
                                 </PersistentState>
