@@ -129,7 +129,10 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
 public String convertUnicode(String in) {
-        return in.replaceAll("\\\\\\\\xf6", "ö").replaceAll("\\\\\\\\xe4", "ä");
+        return in.replaceAll("\\\\\\\\xf6", "ö")
+                .replaceAll("\\\\\\\\xe4", "ä")
+                .replaceAll("\\\\\\\\xfc", "ü")
+                .replaceAll("\\\\\\\\xdc", "Ü");
 }
 
 
